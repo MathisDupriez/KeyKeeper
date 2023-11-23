@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="527.0" style="-fx-background-image: red;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="KeyKeeper.Controller.ManageGroupController">
+   <center>
+      <Separator prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #282C36;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="114.0" prefWidth="206.0" style="-fx-background-color: #282C36;">
+               <children>
+                  <ComboBox fx:id="groupComboBox" prefWidth="150.0" promptText="Group">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <Label fx:id="SelectedGroupLabel" text="Selected Group" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="251.0" style="-fx-background-color: #282C36;">
+               <children>
+                  <Button fx:id="deleteGroupButton" mnemonicParsing="false" text="Delete the group">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="modifyGroupButton" mnemonicParsing="false" text="modify the group">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <HBox fx:id="GroupModifyHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="groupNameTextField">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="confirmButton" mnemonicParsing="false" text="Confirm">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <ScrollPane prefHeight="404.0" prefWidth="527.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="407.0" prefWidth="510.0" style="-fx-background-color: #2C3E50;">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="74.0" prefWidth="486.0" style="-fx-background-color: #2C3E50;">
+                     <children>
+                        <Label text="UserName" textFill="WHITE" />
+                        <Label text="Descrition" textFill="WHITE" />
+                        <MenuButton mnemonicParsing="false" text="Change group">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </bottom>
+</BorderPane>

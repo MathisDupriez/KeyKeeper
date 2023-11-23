@@ -1,0 +1,41 @@
+TO DO :
+## Pour les groupes
+
+[keyapplication] -> [KeyController]
+- ajouter une fonction pour récupérer les groupes de la base de donnée {done }
+
+[database] -> [KeyApplication] -> [KeyController]
+- ajouter une fonction dans [KeyController] pour peupler la comboBox des groupes et l'utiliser dans [KeyApplication]{done }
+
+[database] <- [KeyApplication] <- [KeyController]
+- ajouter une fonction pour modifier un groupe -> faire une fenetre ou on voit tout les groupes pour les modifier
+
+[database] <- [KeyApplication] <- [KeyController]
+- ajouter une fonction pour supprimer un groupe -> faire une fenetre ou on voit tout les groupes pour les supprimer
+- gerer la suppression d'un groupe -> supprimer les mots de passe associé ou les mettre dans un groupe par defaut ?
+// si on les supprime, il faut faire une fonction pour supprimer les mots de passe associé a un groupe
+
+
+## Pour l'ajout de mot de passe
+
+[keyapplication] -> [KeyController]
+- ajouter une fonction pour remplir le tableau des mot de passe avec les mots de passe du groupe selectionné
+
+[database] <- [KeyApplication] <- [KeyController]
+- ajouter une fonction pour ajouter un mot de passe a la base de donnée
+
+[database] <- [KeyApplication] <- [KeyController]
+- ajouter une fonction pour supprimer un mot de passe de la base de donnée
+
+[database] <- [KeyApplication] <- [KeyController]
+- ajouter une fonction pour modifier un mot de passe de la base de donnée
+
+
+## Pour l'onglet file
+// a faire en dernier
+// structurer le fichier de configuration
+// faire une fonction pour sauver la db dans un fichier
+[FileConfiguration] <-> [KeyApplication] -> [KeyController]
+- ajouter le bouton pour la fenetre de gestion des groupes
+- ajouter la possibilité de changer les parametres de l'application (mdp maitre, db connecter etc..)
+- ajouter la possibilité de changer les paramètre du visuel (couleur, police etc..)
